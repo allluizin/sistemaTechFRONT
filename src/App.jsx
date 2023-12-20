@@ -1,33 +1,12 @@
-import { useState } from 'react'
-import Estoque from './components/Estoque'
-import {BrowserRouter, Routes, Link, Route} from 'react-router-dom'
-import {Nav} from 'react-bootstrap';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import 'normalize.css'
 import './App.css'
+import { BrowserRouter, Routes, Link, Route } from 'react-router-dom';
 
 function App() {
   //const [count, setCount] = useState(0)
 
   return (
-    // <div className="alo">
-    //   <h1>TECHFLEX INDUSTRIA</h1>
-    //   <BrowserRouter>
-
-    //   <Nav variant='tabs'>
-    //     <Nav.Link as={Link} to="/">Pagina inicial</Nav.Link>
-    //     <Nav.Link as={Link} to="/estoque">Cadastro Estoque</Nav.Link>
-    //     <Nav.Link as={Link} to="/sobre">Sobre</Nav.Link>
-    //   </Nav>
-    //   <Routes>
-
-    //     <Route path="" element={<Home/>}></Route>
-    //     <Route path="/estoque" element={<Estoque/>}></Route>
-    //     <Route path="/sobre" element={<Sobre/>}></Route>
-
-    //   </Routes>
-    //   </BrowserRouter>
-    //   </div>
+    
     <div className="container">
       <header>
         <p>TECHFLEX</p>
@@ -37,8 +16,9 @@ function App() {
           <h1>TechFlex Industria e Comercio LTDA</h1>
           <p>Sistema de controle de estoque e entrada e saída de material</p>
           <div className="buttons">
+            
             <a href="#login">Faça Login</a>
-            <a href="#login">Cadastre-se</a>
+            <a href="#cadastro">Cadastre-se</a>
           </div>
         </section>
         <section className='box-requisitos'>
@@ -69,6 +49,7 @@ function App() {
       </footer>
     </div>
   )
+  
 }
 
 export default App;

@@ -44,7 +44,7 @@ h1{
     margin-bottom: 50px;
 }
 
-.box-titulo a{
+.box-titulo a, Link{
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
