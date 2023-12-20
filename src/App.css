@@ -1,0 +1,137 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    background-color: #040453;   
+    color: #fff;
+    padding: 0 15px;
+}
+
+header p{
+    font-weight: bold;
+    font-size:  30px;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.box-titulo{
+    background-color: #1e2dff;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1{
+    color: #fff;
+}
+.box-titulo p{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.box-titulo a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.box-titulo a:hover{
+    color: black;
+    background-color: #fff;
+    transition: .3s all;
+}
+.box-requisitos{
+    padding: 30px 10px;
+}
+.box-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#040453;
+    width: calc((100% / 3) - 10px);
+    max-width: 300px;
+    margin: 5px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(22, 112, 231, 0.986)
+}
+.card:hover{
+    background-color: rgba(22, 112, 231, 0.986);
+    transition: all .3s;
+}
+.card h3{
+    margin: 0 0 10px;
+    color: #ffd700;
+}
+.card p{
+    margin: 0;
+    color: #fff;
+}
+footer{
+    background-color: #f2f3f6;
+    text-align: center;
+}
+@media screen and (max-width: 560px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .box-titulo{
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .box-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .card h3, p{
+        font-size: 15px;
+    }
+    .card{
+        margin-top: 20px;
+        margin: 30px;
+    }
+    footer{
+        margin-top: 100%;
+    }
+}
+@media screen and (max-width: 376px){
+    footer{
+        margin-top: 100%;
+    }
+    .card h3, p{
+        font-size: 11px;
+    }
+    .card{  
+        margin: 10px;
+    }
+}
